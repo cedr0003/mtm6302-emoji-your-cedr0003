@@ -1,0 +1,32 @@
+.grid {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 10px;
+	margin: 20px;
+    padding: 1em 4em 4em  4em;
+}
+.item {
+	background-color: #fff;
+	border: 1px solid #000000;
+	padding: 10px;
+	font-size: 24px;
+	text-align: center;
+}
+#name{
+    display: flex;
+    justify-content: center;
+}
+body{
+    margin: 2em;
+    border: 3px solid rgb(0, 0, 0); 
+}
+@media screen and (max-width:800px) {
+   .grid{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px;
+   }
+   .item{
+    font-size: 20px;
+    padding: 10px;
+   } 
+}
